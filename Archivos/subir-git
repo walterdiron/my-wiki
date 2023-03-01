@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Navega al directorio raíz del repositorio
+cd /ruta/al/repositorio
+
+# Agrega los cambios realizados
+git add .
+
+# Confirma los cambios
+read -p "Introduce el mensaje de confirmación: " mensaje
+git commit -m "$mensaje"
+
+# Sube los cambios confirmados
+git push origin master
