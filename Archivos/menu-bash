@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Función para mostrar el menú
+mostrar_menu() {
+    echo "Seleccione una opción:"
+    echo "1. Opción 1"
+    echo "2. Opción 2"
+    echo "3. Opción 3"
+    echo "4. Salir"
+}
+
+# Función para leer la opción seleccionada
+leer_opcion() {
+    local opcion
+    read -p "Ingrese su opción: " opcion
+    echo $opcion
+}
+
+# Bucle principal
+opcion=0
+while [[ $opcion -ne 4 ]]; do
+    mostrar_menu
+    opcion=$(leer_opcion)
+
+    case $opcion in
+        1)
+            echo "Ha seleccionado la opción 1"
+            # Código para la opción 1
+            ;;
+        2)
+            echo "Ha seleccionado la opción 2"
+            # Código para la opción 2
+            ;;
+        3)
+            echo "Ha seleccionado la opción 3"
+            # Código para la opción 3
+            ;;
+        4)
+            echo "¡Hasta luego!"
+            ;;
+        *)
+            echo "Opción inválida"
+            ;;
+    esac
+done
