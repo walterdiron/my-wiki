@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Actualizar LinuxMint.
+#Actualizar
 sudo apt update && sudo apt upgrade -y
 
 #Instalar paquetes requeridos.
